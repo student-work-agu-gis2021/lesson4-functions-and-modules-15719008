@@ -22,7 +22,7 @@
 def fahr_to_celsius(temp_fahrenheit):
   converted_temp = (temp_fahrenheit-32)/1.8;
   return converted_temp;
-  
+
 print("48 degrees Fahrenheit in Celsius is:", fahr_to_celsius(48));
 print("71 degrees Fahrenheit in Celsius is:", fahr_to_celsius(71));
 
@@ -49,8 +49,8 @@ print("71 degrees Fahrenheit in Celsius is:", fahr_to_celsius(71));
 
 # YOUR ANSWER HERE. Write your answers as comments
 #
-#
-#
+#1. Yes.
+#2. Because I can calculate the defined function by changing the arguments many times.
 #
 
 # #### Done!
