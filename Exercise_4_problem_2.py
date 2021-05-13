@@ -78,9 +78,9 @@ print("ok :)")
 
 # YOUR ANSWER HERE. Write your answer as comments
 #
-#
-#
-#
+#All the variable names are correct.
+#My code has enough comments.
+#My function has an informative dosctring.
 #
 # YOUR ANSWER ENDS HERE
 
