@@ -10,7 +10,7 @@
 # 
 # Your score on this problem will be based on following criteria:
 # 
-# - Creating a new script file called `temp_functions.py` with the functions that you wrote in Problems 1 and 2
+# - Creating a new script file called temp_functions.py with the functions that you wrote in Problems 1 and 2
 # - Add a docstring to the script file
 # - Converting and classifying the list of temperatures in Part 2
 # - Storing the number of temperatures in each class in the specified variables
@@ -20,7 +20,7 @@
 # 
 # For this part you should
 # 
-# - Create a new script file called `temp_functions.py` in the current directory as we saw in the Lesson 4 materials. Copy and paste the functions that you wrote in Problems 1 and 2 into that script file (i.e., the `fahr_to_celsius` and `temp_classifier` functions)
+# - Create a new script file called temp_functions.py in the current directory as we saw in the Lesson 4 materials. Copy and paste the functions that you wrote in Problems 1 and 2 into that script file (i.e., the fahr_to_celsius and temp_classifier functions)
 # - Add a docstring to the script file (in addition to the separate docstrings in the functions)
 
 # ### Part 2: Convert Fahrenheit temperatures to Celsius (3 points)
@@ -51,20 +51,25 @@ temp_data =  [19, 21, 21, 21, 23, 23, 23, 21, 19, 21, 19, 21, 23, 27, 27, 28, 30
 
 # #### Part 2 (continues)
 # 
-# 2. Import the `fahr_to_celsius` and `temp_classifier` functions from your `temp_functions.py` 
-# 3. Create an empty list called `temp_classes` (which will be filled with temperature class numbers later)
-# 4. **Convert the Fahrenheit temperatures** in the `temp_data` list into Celsius and **classify the Celsius temperatures** using the importend functions. The output should be stored in the `temp_classes` list
+# 2. Import the fahr_to_celsius and temp_classifier functions from your temp_functions.py 
+# 3. Create an empty list called temp_classes (which will be filled with temperature class numbers later)
+# 4. **Convert the Fahrenheit temperatures** in the temp_data list into Celsius and **classify the Celsius temperatures** using the importend functions. The output should be stored in the temp_classes list
 #  
 #    **You can do the temperature conversion and classification inside one for loop:**
 # 
-#     - Iterate over the list of Fahrenheit temperatures (create a `for` loop), and inside the loop:
+#     - Iterate over the list of Fahrenheit temperatures (create a for loop), and inside the loop:
 # 
-#         1. Create a new variable called `temp_celsius` in which you should assign the temperature in Celsius using the `fahr_to_celsius` function to convert the Fahrenheit temperature into Celsius.
-#         2. Create a new variable called `temp_class` in which you should assign the temperature class number (0, 1, 2, or 3) using the `temp_classifier` function
-#         3. Add the `temp_class` value to the `temp_classes` list
+#         1. Create a new variable called temp_celsius in which you should assign the temperature in Celsius using the fahr_to_celsius function to convert the Fahrenheit temperature into Celsius.
+#         2. Create a new variable called temp_class in which you should assign the temperature class number (0, 1, 2, or 3) using the temp_classifier function
+#         3. Add the temp_class value to the temp_classes list
 
 
 # YOUR CODE HERE
+from temp_functions import temp_classifier,fahr_to_celsius
+temp_classes=[]
+for temp in temp_data:
+  temp_celsius=temp_classifier(fahr_to_celsius(temp))
+  temp_classes.append(temp_celsius)
 
 # #### Part 2 (continues)
 # 
